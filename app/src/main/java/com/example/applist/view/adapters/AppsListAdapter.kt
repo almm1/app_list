@@ -6,6 +6,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.applist.databinding.ItemAppBinding
 import com.example.applist.model.AppData
+import com.example.applist.model.AppLogo
 
 class AppsListAdapter(private val actionListener: ActionListener) :
     RecyclerView.Adapter<AppsListAdapter.AppListViewHolder>(),
@@ -25,7 +26,9 @@ class AppsListAdapter(private val actionListener: ActionListener) :
         with(holder.binding) {
             holder.itemView.tag = app
             titleApp.text = app.name
-            iconApp.setImageDrawable(app.logo)
+
+            val logo = AppLogo.logoMap[app.logo]
+            iconApp.setImageDrawable(logo)
         }
     }
 

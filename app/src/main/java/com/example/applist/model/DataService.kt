@@ -8,6 +8,7 @@ class DataService {
 
     fun loadData(context: Context): List<AppData> {
         val apps: MutableList<AppData> = mutableListOf()
+        val logotips = AppLogo
         val packageManager = context.packageManager
 
         val packages = packageManager.getInstalledPackages(PackageManager.GET_META_DATA)
@@ -26,7 +27,8 @@ class DataService {
                 val length = file.length()
                 val size = length / 8.0 / 1024.0 / 1024.0 //bits to MB
 
-                val app = AppData(name, logo, size, installTime, targetSdk)
+                logotips.logoMap[logo.toString()] = logo
+                val app = AppData(name, logo.toString(), size, installTime, targetSdk)
                 apps.add(app)
             }
         }

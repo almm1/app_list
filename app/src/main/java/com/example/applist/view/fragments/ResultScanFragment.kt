@@ -23,6 +23,7 @@ class ResultScanFragment : Fragment(R.layout.result_scan_fragment) {
         super.onViewCreated(view, savedInstanceState)
         binding = ResultScanFragmentBinding.bind(view)
 
+
         adapter = AppsListAdapter(object : ActionListener {
             override fun onAppDetails(app: AppData) {
                 onAppDetailsClick(app)

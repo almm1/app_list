@@ -17,13 +17,12 @@ class DetailsFragment : Fragment(R.layout.details_fragment) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
         binding = DetailsFragmentBinding.bind(view)
 
         binding.backButton.setOnClickListener { onBackButtonPressed() }
         viewModel.setApp(args.app)
 
-        binding.logoApp.setImageDrawable(args.app.logo)
+        binding.logoApp.setImageDrawable(viewModel.logo)
         binding.nameApp.text=viewModel.name
         binding.sizeApp.text=viewModel.size
         binding.sdkVersion.text=viewModel.sdkVersion

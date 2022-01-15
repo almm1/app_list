@@ -64,7 +64,7 @@
         android:elevation="@dimen/default_elevation"
         android:orientation="horizontal"
         android:padding="7dp"
-        android:visibility="visible"
+        android:visibility="gone"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
