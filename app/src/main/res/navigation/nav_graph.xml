@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/scanFragment">
+
+    <fragment
+        android:id="@+id/scanFragment"
+        android:name="com.example.applist.view.fragments.ScanFragment"
+        android:label="scan_fragment"
+        tools:layout="@layout/scan_fragment" >
+        <action
+            android:id="@+id/action_scanFragment_to_resultScanFragment"
+            app:destination="@id/resultScanFragment"
+            app:popUpTo="@id/scanFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultScanFragment"
+        android:name="com.example.applist.view.fragments.ResultScanFragment"
+        android:label="result_scan_fragment"
+        tools:layout="@layout/result_scan_fragment" >
+        <action
+            android:id="@+id/action_resultScanFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+        <argument android:name="apps"
+            app:argType="com.example.applist.model.AppData[]" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="com.example.applist.view.fragments.DetailsFragment"
+        android:label="details_fragment"
+        tools:layout="@layout/details_fragment" >
+        <argument
+            android:name="app"
+            app:argType="com.example.applist.model.AppData" />
+    </fragment>
+</navigation>

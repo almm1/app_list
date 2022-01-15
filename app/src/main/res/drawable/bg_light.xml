@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <!-- create gradient you want to use with the angle you want to use -->
+        <shape android:shape="rectangle">
+            <size
+                android:width="200dp"
+                android:height="200dp" />
+
+            <gradient
+                android:angle="270"
+                android:startColor="@color/light_start_grad_bg"
+                android:endColor="@color/light_end_grad_bg"
+                />
+        </shape>
+    </item>
+</selector>

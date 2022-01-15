@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">AppList</string>
+    <string name="day_mode">DAYMODE</string>
+    <string name="night_mode">NIGHTMODE</string>
+    <string name="find_all_apps">Find all apps</string>
+    <string name="on_your_phone">on your phone</string>
+    <string name="scan">SCAN</string>
+    <string name="scan_results">Scan result</string>
+    <string name="size">Size:</string>
+    <string name="sdk_version">TargetSdkVersion:</string>
+    <string name="installation_date">Installation date:</string>
+    <string name="back">Back</string>
+</resources>

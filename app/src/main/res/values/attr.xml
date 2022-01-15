@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="bg" format="reference" />
+    <attr name="details_bg" format="reference" />
+    <attr name="item_bg" format="reference" />
+    <attr name="logo_theme" format="reference" />
+    <attr name="more_button_bg" format="reference" />
+    <attr name="more_icon" format="reference" />
+    <attr name="ray" format="reference" />
+    <attr name="theme_button_bg" format="reference" />
+    <attr name="text_color" format="reference" />
+    <attr name="secondary_text_color" format="reference" />
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+    <color name="dark_start_grad_bg">#34393F</color>
+    <color name="dark_end_grad_bg">#1B1D21</color>
+
+    <color name="light_start_grad_bg">#ECECEC</color>
+    <color name="light_end_grad_bg">#E7E7E7</color>
+
+
+    <color name="light_start_default_grad">#FFFFFF</color>
+    <color name="light_end_default_grad">#D8D8D8</color>
+
+    <color name="light_start_border_grad">#EFEFEF</color>
+    <color name="light_end_border_grad">#D1D1D1</color>
+
+
+    <color name="dark_start_default_grad">#2F3338</color>
+    <color name="dark_end_default_grad">#1D2024</color>
+
+    <color name="dark_start_border_grad">#383C43</color>
+    <color name="dark_end_border_grad">#1E2025</color>
+
+    <color name="light_main_text_color">#2F3338</color>
+    <color name="light_secondary_text_color">#B32F3338</color>
+    <color name="dark_secondary_text_color">#B3FFFFFF</color>
+
+</resources>
